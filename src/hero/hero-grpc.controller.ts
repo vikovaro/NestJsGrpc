@@ -10,7 +10,7 @@ export class HeroGrpcController {
 
     @GrpcMethod('HeroService', 'FindOne')
     findOne(data: { id: number }) {
-        const hero = this.heroes.find(h => h.id === data.id);
+        const hero = this.heroes.find((h) => h.id === data.id);
         return hero || { id: 0, name: 'Unknown' };
     }
 }
