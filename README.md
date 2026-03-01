@@ -1,22 +1,11 @@
-# NestJS gRPC Example (HTTP + gRPC в одном приложении)
+# NestJS gRPC Example
 
-Пример простого NestJS-приложения, которое:
+Поднимает **gRPC сервер** на порту `50051` по `proto/hero.proto`;
 
-- поднимает **HTTP API** на порту `3000`;
-- поднимает **gRPC сервер** на порту `50051` по `proto/hero.proto`;
-- использует **gRPC-клиента** внутри HTTP-контроллера, чтобы вызвать gRPC-метод.
-
-## Установка
+## Запуск в dev режиме
 
 ```bash
-cd C:\Users\stanislav\Desktop\ttt
-npm install
-```
-
-## Запуск в режиме разработки
-
-```bash
-npm run start:dev
+bun run start:dev
 ```
 
 - HTTP: `http://localhost:3000/hero/1`
